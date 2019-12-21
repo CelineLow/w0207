@@ -8,7 +8,7 @@ class Animal {
     public function __construct($name){
         $this->name = $name;
 
-        echo "may name is".$name."<br/>";
+        echo "my name is".$name."<br/>";
     }
 
     public function warmup2(){
