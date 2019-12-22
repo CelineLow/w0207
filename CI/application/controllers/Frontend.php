@@ -23,8 +23,12 @@ class Frontend extends CI_Controller{
         $this->load->view("footer");
     }
 
-    public function product_detail($product_id){        
+    public function product_detail($product_id){    
+
         echo"<h1>product detail".$product_id."</h1>";
+
+        $this->load->view("header");
+        $this->load->view("footer");
     }
 }
 
