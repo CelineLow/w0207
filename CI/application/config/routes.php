@@ -50,9 +50,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 
+
+$route['mychart'] = 'frontend/mychart';
+
+$route['getProductAPI'] = "frontend/getProductAPI";
+$route['getProductAPI/(:num)'] = "frontend/getProductAPI/$1";
+
+$route['login'] = 'frontend/login';
 $route['addcart'] = 'frontend/addcart';
-$route['product_list'] = 'Frontend/product_list';
+$route['addcartAPI'] = "frontend/addcartAPI";
+$route['product_list'] = 'frontend/product_list';
+$route['product_list/(:num)'] = 'Frontend/product_list/$1';
 $route['product_detail/(:num)'] = 'Frontend/product_detail/$1';
+
+$route['backend/dashboard'] = 'backend/dashboard';
+$route['adminlogout'] = 'backend/logout';
+$route['adminlogin'] = 'login/index';
+$route['adminsubmit'] = 'login/submit';
+
+$route['api/glogin']	 = 'api_login_manage/glogin';
+$route['api/flogin']	 = 'api_login_manage/flogin';
 
 $route['default_controller'] = 'Frontend/home';
 $route['404_override'] = '';
